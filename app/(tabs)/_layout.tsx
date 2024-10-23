@@ -17,7 +17,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Dashboard',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
@@ -26,9 +26,27 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
+          title: 'Taxes',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'cash' : 'cash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="bikes"
+        options={{
+          title: 'Bicycles',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'bicycle' : 'bicycle-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="alarm"
+        options={{
+          title: 'Alarm',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'megaphone' : 'megaphone-outline'} color={color} />
           ),
         }}
       />

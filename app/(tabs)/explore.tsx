@@ -10,10 +10,10 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
+      headerBackgroundColor={{ light: '#D0D0D0', dark: '#1f331f' }}
+      headerImage={<Ionicons size={310} name="cash-outline" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Taxes</ThemedText>
       </ThemedView>
       <ThemedText>This app includes example code to help you get started.</ThemedText>
       <Collapsible title="File-based routing">
@@ -90,7 +90,8 @@ export default function TabTwoScreen() {
 
 const styles = StyleSheet.create({
   headerImage: {
-    color: '#808080',
+    color: '#4c7c4c',
+    transform : 'rotate(-25deg)',
     bottom: -90,
     left: -35,
     position: 'absolute',
