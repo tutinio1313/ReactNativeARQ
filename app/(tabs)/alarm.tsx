@@ -1,20 +1,21 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform, View } from 'react-native';
-import  MapView, {Marker} from 'react-native-maps'; 
+import { React } from "react";
+import { StyleSheet} from 'react-native';
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import CustomMapView from '@/components/CustomMapView';
 
+import alarm from '@/assets/images/alarm.png';
+import alarmInactive from '@/assets/images/alarmInactive.png';
 
 export default function TabThreeScreen() {
-    const markers : Array<object> = [ { title : "Alarma #1", description : "Barrio Roca", latitude : -31.419211, longitude : -62.096819, isActive : true},
-                                    {title : "Alarma #2", description : "Barrio Procrear", latitude : -31.450262, longitude: -62.074327, isActive : false},
-                                    {title : "Alarma #3", description : "Barrio UTN", latitude : -31.423276, longitude : -62.105988, isActive : false}]; 
+  const markers : object[] = [ { key : 1, title : "Alarma #1", description : "Barrio Roca", latitude : -31.419211, longitude : -62.096819, isActive : true},
+    { key : 2,title : "Alarma #2", description : "Barrio Procrear", latitude : -31.450262, longitude: -62.074327, isActive : false},
+    { key : 3,title : "Alarma #3", description : "Barrio UTN", latitude : -31.423276, longitude : -62.105988, isActive : false}];
 
-
+  
     return(
         <ParallaxScrollView
         headerBackgroundColor={{ light: '#D0D0D0', dark: '#3f0000' }}
@@ -22,33 +23,11 @@ export default function TabThreeScreen() {
         <ThemedView style = {styles.titleContainer}>
             <ThemedText type = "title" >Alarm</ThemedText>
         </ThemedView>
-        
-        <ThemedView style = {styles.defaultContainer}>
-            <MapView
-             initialRegion={{
-                    latitude: -31.419640,
-                    longitude: -62.095234,
-                    latitudeDelta: 0.0922,
-                    longitudeDelta: 0.0421,
-                  }}
-                style = {styles.mapContainer}
-            >
-                {markers.map(marker => {
-                    return(
-                        <Marker 
-                        key = {marker.key}
-                        title = {marker.title}
-                        description = {marker.description}
-                        coordinate ={{latitude : marker.latitude, longitude : marker.longitude}}
-                        image = {marker.isActive ? require('@/assets/images/alarm.png') : require('@/assets/images/alarmInactive.png')}
-                        userInterfaceStyle = "dark"
-                        showsUserPosition = {true}
-                        />
-                    )
-                })}                    
-            </MapView>
-        </ThemedView>
-
+          <CustomMapView 
+          markers = {markers}
+          icon = {alarm}
+          alternateIcon = {alarmInactive}
+          />
         </ParallaxScrollView>
     )    
 }
@@ -64,17 +43,6 @@ const styles = StyleSheet.create({
     titleContainer: {
       flexDirection: 'row',
       gap: 8,
-    },
-    defaultContainer : {
-            height: 400,
-            width: 350,
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-    },
-    mapContainer : {
-        ...StyleSheet.absoluteFillObject,
-        width: "fit-content"
-        ,height : "fit-content"
-    }
+    }   
   });
   
