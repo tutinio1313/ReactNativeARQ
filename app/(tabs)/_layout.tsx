@@ -24,7 +24,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="taxes"
         options={{
           title: 'Taxes',
           tabBarIcon: ({ color, focused }) => (
@@ -38,6 +38,15 @@ export default function TabLayout() {
           title: 'Bicycles',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'bicycle' : 'bicycle-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="parking"
+        options={{
+          title: 'Parking',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'car' : 'car-outline'} color={color} />
           ),
         }}
       />
