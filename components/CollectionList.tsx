@@ -34,7 +34,7 @@ export default function CollectionList({
     <ThemedView style={styles.container}>
         {markers.map((marker) => {
           return (
-            <ThemedView style={styles.alarmContainer} key={marker.key}>
+            <ThemedView style={styles.itemContainer} key={marker.key}>
               <ThemedText> {marker.description}</ThemedText>
               <Button
                 title={marker.isActive ? "Go to maps" : "Unavailable"}
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginTop : 20,
     gap: 4
   },
-  alarmContainer: {
+  itemContainer: {
     marginTop: 10,
     width: "80vh"
   }

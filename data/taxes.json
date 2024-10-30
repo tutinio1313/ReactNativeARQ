@@ -1,0 +1,54 @@
+{
+    "id": 2024,
+    "months": [
+      {
+        "name": "January",
+        "taxPaid": true
+      },
+      {
+        "name": "February",
+        "taxPaid": true
+      },
+      {
+        "name": "March",
+        "taxPaid": true
+      },
+      {
+        "name": "April",
+        "taxPaid": true
+      },
+      {
+        "name": "May",
+        "taxPaid": true
+      },
+      {
+        "name": "June",
+        "taxPaid": true
+      },
+      {
+        "name": "July",
+        "taxPaid": true
+      },
+      {
+        "name": "August",
+        "taxPaid": true
+      },
+      {
+        "name": "September",
+        "taxPaid": true
+      },
+      {
+        "name": "October",
+        "taxPaid": false
+      },
+      {
+        "name": "November",
+        "taxPaid": false
+      },
+      {
+        "name": "December",
+        "taxPaid": false
+      }
+    ]
+  }
+  

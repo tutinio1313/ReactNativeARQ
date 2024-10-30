@@ -1,0 +1,35 @@
+{
+    "emergencyContacts": [
+      {
+        "key": 1,
+        "name": "Police Station",
+        "phoneNumber": "123-456-7890",
+        "email": null
+      },
+      {
+        "key": 2,
+        "name": "Fire Department",
+        "phoneNumber": null,
+        "email": "firedept@example.com"
+      },
+      {
+        "key": 3,
+        "name": "General Hospital",
+        "phoneNumber": "987-654-3210",
+        "email": null
+      },
+      {
+        "key": 4,
+        "name": "Poison Control Center",
+        "phoneNumber": null,
+        "email": "poisoncontrol@example.com"
+      },
+      {
+        "key": 5,
+        "name": "Ambulance Service",
+        "phoneNumber": "555-555-5555",
+        "email": null
+      }
+    ]
+  }
+  
