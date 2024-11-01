@@ -13,7 +13,7 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#1f331f' }}
       headerImage={<Ionicons size={310} name="cash-outline" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Taxes</ThemedText>
+        <ThemedText type="title">Impuestos</ThemedText>
       </ThemedView>
 
       <TaxesCollectionView/>

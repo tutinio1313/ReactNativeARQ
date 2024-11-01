@@ -23,8 +23,8 @@ export default function CollectionList({
       <Button
         title={
           isCollapsibleVisible
-            ? "Hide " + ContentDisplayed
-            : "Show " + ContentDisplayed
+            ? "Ocultar " + ContentDisplayed
+            : "Mostrar " + ContentDisplayed
         }
         color = {ButtonColor}
         onPress={() => setCollapsibleVisible(!isCollapsibleVisible)}
@@ -37,7 +37,7 @@ export default function CollectionList({
             <ThemedView style={styles.itemContainer} key={marker.key}>
               <ThemedText> {marker.description}</ThemedText>
               <Button
-                title={marker.isActive ? "Go to maps" : "Unavailable"}
+                title={marker.isActive ? "Abrir en Maps" : "No disponible"}
                 color={ButtonColor}
                 disabled={marker.isActive ? false : true}
                 onPress={() => ClickButton(marker.latitude, marker.longitude)}

@@ -51,7 +51,7 @@ export default function TabThreeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Alarm</ThemedText>
+        <ThemedText type="title">Alarmas</ThemedText>
       </ThemedView>
 
       <CustomMapView
@@ -63,7 +63,7 @@ export default function TabThreeScreen() {
       <CollectionList 
       markers = {markers}
       ButtonColor = "#3f0000"
-      ContentDisplayed = "Alarms"/>
+      ContentDisplayed = "alarmas"/>
 
       
     </ParallaxScrollView>

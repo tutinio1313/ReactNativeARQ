@@ -20,7 +20,7 @@ export default function CustomMapView({
     <ThemedView style={styles.defaultContainer}>
       <MapView
         provider={"google"}
-        googleMapId={"dd37f6d24aa03efa"}
+        //googleMapId={""}
         initialRegion={{
           latitude: -31.41964,
           longitude: -62.095234,

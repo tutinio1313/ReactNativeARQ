@@ -13,7 +13,7 @@ export default function TaxesCollectionView(){
     return (
         <ThemedView>
             <Button
-                title = {isVisible ? "Hide history" : "Show history"}
+                title = {isVisible ? "Mostrar historial" : "Ocultar historial"}
                 onPress = {() => setVisibility(!isVisible)}
             />
 
@@ -39,7 +39,7 @@ export default function TaxesCollectionView(){
 
                                     {
                                     tax.taxPaid ? null : <Button 
-                                                            title = "Pay it"
+                                                            title = "Pagar"
                                                             color = "#f52323"
                                                             /> 
                                     }

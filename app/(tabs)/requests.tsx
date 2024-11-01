@@ -1,30 +1,37 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { React } from "react";
-import { StyleSheet } from "react-native";
+  import { React, useState } from "react";
+import { StyleSheet, View } from "react-native";
 
-import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import RequestForm from "@/components/requests/RequestForm";
+
 
 export default function requests() {
+  const [isReportSubmitted, setIsReportSubmitted] = useState<boolean>(false)
+  
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: "#D0D0D0", dark: "#14181e" }}
-      headerImage={
-        <Ionicons size={270} name="alert-circle" style={styles.headerImage} />
-      }
+    <View
+    style = {styles.container}
     >
+      <ThemedText type = "title">Quejas</ThemedText>
 
-    </ParallaxScrollView>
+      {
+        !isReportSubmitted ?
+        
+        <RequestForm setRequest = {setIsReportSubmitted}/> :
+
+        <ThemedView>
+            <ThemedText>The ticket has been created!</ThemedText>
+        </ThemedView>
+      }
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: "#5b6d88",
-    transform: "rotate(-25deg)",
-    top: "auto",
-    left: 35,
-    position: "absolute"
+  container : {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 });

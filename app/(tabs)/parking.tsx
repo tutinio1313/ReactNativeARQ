@@ -16,7 +16,7 @@ export default function parking() {
         headerBackgroundColor={{ light: '#D0D0D0', dark: '#3B1E54' }}
         headerImage={<Ionicons size={310} name="car" style={styles.headerImage} />}>
         <ThemedView style={styles.titleContainer}>
-          <ThemedText type="title">Parking</ThemedText>
+          <ThemedText type="title">Estacionamiento medido</ThemedText>
         </ThemedView>
 
         <CustomMapView

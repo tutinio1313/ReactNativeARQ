@@ -25,7 +25,7 @@ export default function help() {
         >
 
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Help</ThemedText>
+                <ThemedText type="title">Telefonos de Ayuda</ThemedText>
             </ThemedView>
 
 

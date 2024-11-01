@@ -18,7 +18,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Dashboard",
+          title: "Home",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "home" : "home-outline"}
@@ -30,7 +30,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="taxes"
         options={{
-          title: "Taxes",
+          title: "Impuestos",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "cash" : "cash-outline"}
@@ -42,7 +42,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="bikes"
         options={{
-          title: "Bicycles",
+          title: "Bicicletas",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "bicycle" : "bicycle-outline"}
@@ -54,7 +54,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="parking"
         options={{
-          title: "Parking",
+          title: "E.M.",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? "car" : "car-outline"} color={color} />
           )
@@ -63,7 +63,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="alarm"
         options={{
-          title: "Alarm",
+          title: "Alarmas",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "megaphone" : "megaphone-outline"}
@@ -76,7 +76,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="help"
         options={{
-          title: "Help",
+          title: "Ayuda",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "help-circle" : "help-circle-outline"}
@@ -89,7 +89,7 @@ export default function TabLayout() {
 <Tabs.Screen
         name="requests"
         options={{
-          title: "Request",
+          title: "Quejas",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "alert" : "alert-outline"}

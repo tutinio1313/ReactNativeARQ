@@ -1,0 +1,40 @@
+{
+    "reportReasons": [
+      {
+        "key": 1,
+        "value" : 1,
+        "label": "Street Light Malfunction"
+      },
+      {
+        "key": 2,
+        "value" : 2,
+        "label": "Road Damage"
+      },
+      {
+        "key": 3,
+        "value" : 3,
+        "label": "Garbage Collection Issue"
+      },
+      {
+        "key": 4,
+        "value" : 4,
+        "label": "Noise Complaint"
+      },
+      {
+        "key": 5,
+        "value" : 5,
+        "label": "Water Supply Problem"
+      },
+      {
+        "key": 6,
+        "value" : 6,
+        "label": "Sewage Blockage"
+      },
+      {
+        "key": 7,
+        "value" : 7,
+        "label": "Illegal Parking"
+      }
+    ]
+  }
+  

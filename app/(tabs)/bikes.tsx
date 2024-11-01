@@ -23,7 +23,7 @@ export default function TabThreeScreen() {
         headerImage = {<Ionicons size={320} name ="bicycle-outline" style ={styles.headerImage}/>}
         >
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Bicycles</ThemedText>                
+                <ThemedText type="title">Bicicletas</ThemedText>                
             </ThemedView>  
 
             <CustomMapView 
@@ -35,7 +35,7 @@ export default function TabThreeScreen() {
             <CollectionList 
             markers = {markers}
             ButtonColor = "#353636"
-            ContentDisplayed = "Bike containers"/>
+            ContentDisplayed = "Bicicleteros"/>
         </ParallaxScrollView>
     )
 }
